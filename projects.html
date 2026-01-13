@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | BI GE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+    <div class="cyber-grid"></div>
+    <div class="floating-orb orb-1"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">BG<span style="color:white">_</span>OS</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="about.html" class="nav-link">Experience</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+        
+        <h2>Featured Deployments</h2>
+        <div class="grid-2">
+            <!-- Project 1 -->
+            <article class="card">
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Booking Ledger</h3>
+                <p style="color: var(--text-dim); margin-bottom: 1.5rem;">
+                    Re-architected the core booking ledger to handle 10x traffic spikes. Implemented a distributed locking mechanism using Redis and Kafka to ensure data consistency across microservices.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-pill">Java</span>
+                    <span class="tech-pill">Kafka</span>
+                    <span class="tech-pill">Redis</span>
+                    <span class="tech-pill">AWS DynamoDB</span>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="card">
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Amazon Prime Logistics AI</h3>
+                <p style="color: var(--text-dim); margin-bottom: 1.5rem;">
+                    Designed a predictive delivery model reducing last-mile latency by 15%. utilized Python for ML pipelines and Go for the high-throughput inference engine.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-pill">Go (Golang)</span>
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">TensorFlow</span>
+                    <span class="tech-pill">Kubernetes</span>
+                </div>
+            </article>
+            
+            <!-- Project 3 -->
+            <article class="card">
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">ACA Compliance Engine</h3>
+                <p style="color: var(--text-dim); margin-bottom: 1.5rem;">
+                    Full-stack development of a healthcare compliance dashboard handling sensitive HIPAA data for Tango Health. Migrated legacy monolith to SOA.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-pill">C# .NET</span>
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">SQL Server</span>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="card">
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Decentralized Identity Vault</h3>
+                <p style="color: var(--text-dim); margin-bottom: 1.5rem;">
+                    Personal Project: A Web3 identity verification system using Zero-Knowledge proofs. Allows users to verify age without revealing birthdate.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-pill">Solidity</span>
+                    <span class="tech-pill">Ethereum</span>
+                    <span class="tech-pill">React.js</span>
+                    <span class="tech-pill">Web3.js</span>
+                </div>
+            </article>
+        </div>
+
+        <h2 style="margin-top: 4rem;">Open Source Contributions</h2>
+        <div class="card">
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                
+                <div style="border-bottom: 1px solid var(--glass-border); padding-bottom: 1rem;">
+                    <h4 style="color: var(--neon-blue); font-size: 1.2rem;">Apache Kafka Client</h4>
+                    <p style="color: var(--text-dim); font-size: 0.9rem;">Contributor</p>
+                    <p style="margin-top: 0.5rem;">Optimized the consumer group rebalancing algorithm, reducing latency by 200ms during node failures.</p>
+                </div>
+
+                <div>
+                    <h4 style="color: var(--neon-blue); font-size: 1.2rem;">React-Spring-Visualizer</h4>
+                    <p style="color: var(--text-dim); font-size: 0.9rem;">Author</p>
+                    <p style="margin-top: 0.5rem;">Created a lightweight visualization library for React spring animations used by 5k+ developers.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

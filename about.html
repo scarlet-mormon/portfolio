@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | BI GE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+    <div class="cyber-grid"></div>
+    <!-- Different Orb positions for variety -->
+    <div class="floating-orb" style="background: var(--neon-green); top: 20%; left: 10%;"></div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">BG<span style="color:white">_</span>OS</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="about.html" class="nav-link active">Experience</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+        
+        <!-- HEADER -->
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <h2>Character Stats & Logs</h2>
+            <p style="color: var(--text-dim); max-width: 600px; margin: 0 auto;">
+                Senior-level operative specializing in distributed systems and high-availability architecture.
+            </p>
+        </div>
+
+        <!-- SKILLS MATRIX (Grid Layout) -->
+        <div class="grid-3" style="margin-bottom: 6rem;">
+            <!-- Skill Card 1 -->
+            <div class="card">
+                <h3 style="font-size: 1.2rem; color: var(--neon-blue); margin-bottom: 1.5rem;">Core Languages</h3>
+                
+                <div class="skill-container">
+                    <div class="skill-label"><span>Java / Scala</span><span>95%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%"></div></div>
+                </div>
+                
+                <div class="skill-container">
+                    <div class="skill-label"><span>Go (Golang)</span><span>90%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%"></div></div>
+                </div>
+
+                <div class="skill-container">
+                    <div class="skill-label"><span>Python</span><span>85%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%"></div></div>
+                </div>
+            </div>
+
+            <!-- Skill Card 2 -->
+            <div class="card">
+                <h3 style="font-size: 1.2rem; color: var(--neon-purple); margin-bottom: 1.5rem;">Infrastructure</h3>
+                <div class="tech-stack">
+                    <span class="tech-pill">AWS (EC2, Lambda, S3)</span>
+                    <span class="tech-pill">Kubernetes</span>
+                    <span class="tech-pill">Docker</span>
+                    <span class="tech-pill">Terraform</span>
+                    <span class="tech-pill">Kafka</span>
+                    <span class="tech-pill">Redis</span>
+                </div>
+                <p style="margin-top: 1rem; color: var(--text-dim); font-size: 0.9rem;">
+                    Architected multi-region failover systems handling 50k+ requests/sec.
+                </p>
+            </div>
+
+            <!-- Skill Card 3 -->
+            <div class="card">
+                <h3 style="font-size: 1.2rem; color: var(--neon-green); margin-bottom: 1.5rem;">Education</h3>
+                <div style="border-left: 2px solid var(--neon-green); padding-left: 1rem;">
+                    <h4 style="color: #fff;">Georgia Institute of Technology</h4>
+                    <p style="color: var(--neon-green); font-size: 0.9rem; margin-bottom: 0.5rem;">Master of Science</p>
+                    <p style="color: var(--text-dim); font-size: 0.9rem;">Computer Engineering</p>
+                    <p style="color: var(--text-dim); font-size: 0.8rem; margin-top: 0.5rem;">algorithms, data structures, distributed computing</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TIMELINE SECTION -->
+        <h2 style="text-align: center; margin-bottom: 3rem;">Career Timeline</h2>
+        
+        <div class="timeline">
+            
+            <!-- Job 1 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="date-badge">Nov 2024 - Present</span>
+                    <h3 style="font-size: 1.5rem;">Senior Software Engineer</h3>
+                    <h4 style="color: var(--neon-blue); font-family: 'Orbitron'; letter-spacing: 1px; margin-bottom: 1rem;">META</h4>
+                    <ul style="color: var(--text-dim); list-style-position: inside; line-height: 1.6;">
+                        <li>Lead engineer for the Payments Platform modernization.</li>
+                        <li>Reduced technical debt by migrating monolithic services to microservices (SOA).</li>
+                        <li>Mentored 3 junior engineers to promotion.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="date-badge">Sep 2018 - Nov 2024</span>
+                    <h3 style="font-size: 1.5rem;">Software Engineer</h3>
+                    <h4 style="color: var(--neon-purple); font-family: 'Orbitron'; letter-spacing: 1px; margin-bottom: 1rem;">GOOGLE</h4>
+                    <ul style="color: var(--text-dim); list-style-position: inside; line-height: 1.6;">
+                        <li>Optimized supply chain algorithms reducing shipping costs by 2%.</li>
+                        <li>Built internal tools using React and Java Spring Boot.</li>
+                        <li>Participated in on-call rotation for Tier-1 services.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="date-badge">Jul 2016 - Aug 2018</span>
+                    <h3 style="font-size: 1.5rem;">Full Stack Developer</h3>
+                    <h4 style="color: var(--neon-green); font-family: 'Orbitron'; letter-spacing: 1px; margin-bottom: 1rem;">AMAZON</h4>
+                    <ul style="color: var(--text-dim); list-style-position: inside; line-height: 1.6;">
+                        <li>Developed ACA compliance software using C# .NET and SQL Server.</li>
+                        <li>Implemented responsive front-end interfaces.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
